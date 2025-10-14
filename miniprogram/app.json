@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "subpackages": [
+    {
+      "root": "pkg-a",
+      "pages": [
+        "pages/index/index"
+      ]
+    },
+    {
+      "root": "pkg-b",
+      "pages": [
+        "pages/detail/index"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

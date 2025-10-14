@@ -1,0 +1,24 @@
+{
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "pages": [
+    // #ifdef MP-PKG-A
+    {
+      "path": "pages/index/index"
+    },
+    // #endif
+    // #ifdef MP-PKG-B
+    {
+      "path": "pages/detail/index"
+    }
+    // #endif
+  ]
+}

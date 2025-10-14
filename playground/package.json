@@ -1,0 +1,52 @@
+{
+  "name": "uni-preset-vue",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "run-p 'dev:**'",
+    "build": "run-p 'build:**'",
+    "dev:pkg-a": "uni -p pkg-a --subpackage=pkg-a",
+    "build:pkg-a": "uni build -p pkg-a --subpackage=pkg-a",
+    "dev:pkg-b": "uni -p pkg-b --subpackage=pkg-b",
+    "build:pkg-b": "uni build -p pkg-b --subpackage=pkg-b"
+  },
+  "uni-app": {
+    "scripts": {
+      "pkg-a": {
+        "title": "pkg-a",
+        "env": {
+          "UNI_PLATFORM": "mp-weixin"
+        },
+        "define": {
+          "MP-PKG-A": true
+        }
+      },
+      "pkg-b": {
+        "title": "pkg-b",
+        "env": {
+          "UNI_PLATFORM": "mp-weixin"
+        },
+        "define": {
+          "MP-PKG-B": true
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-alpha-4070620250722001",
+    "@dcloudio/uni-components": "3.0.0-alpha-4070620250722001",
+    "@dcloudio/uni-mp-weixin": "3.0.0-alpha-4070620250722001",
+    "ni": "^0.0.2",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "^3.4.0",
+    "@dcloudio/uni-automator": "3.0.0-alpha-4070620250722001",
+    "@dcloudio/uni-cli-shared": "3.0.0-alpha-4070620250722001",
+    "@dcloudio/uni-stacktracey": "3.0.0-alpha-4070620250722001",
+    "@dcloudio/vite-plugin-uni": "3.0.0-alpha-4070620250722001",
+    "npm-run-all2": "~6.1.2",
+    "typescript": "^4.9.5",
+    "vite": "^4.4.11",
+    "vite-plugin-uni-subpackage-copy": "workspace:*"
+  }
+}

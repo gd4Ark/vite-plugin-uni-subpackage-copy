@@ -1,0 +1,4 @@
+<view>首页</view>
+
+<view class="btn" catch:tap="navToPkgA">跳转 pkg-a</view>
+<view class="btn" catch:tap="navToPkgB">跳转 pkg-b</view> 

@@ -1,0 +1,14 @@
+.btn {
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+  width: 200rpx;
+  height: 50rpx;
+  padding: 10rpx 20rpx;
+  background-color: #007AFF;
+  color: #fff;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
