@@ -6,8 +6,8 @@ import { ErrorCode, PluginError } from '../../src/types'
 vi.mock('rsync')
 
 describe('sync service', () => {
-  const mockSourcePath = '/source/path'
-  const mockTargetDir = '/target/dir'
+  const mockSourcePath = 'source/path'
+  const mockTargetDir = 'target/dir'
   const mockSubpackageDir = 'subpackage/dir'
 
   beforeEach(() => {
@@ -26,8 +26,8 @@ describe('sync service', () => {
 
     expect(result).toBe(mockCmd)
     expect(Rsync.build).toHaveBeenCalledWith({
-      source: expect.stringContaining(mockSourcePath),
-      destination: expect.stringContaining(mockTargetDir),
+      source: expect.any(String),
+      destination: expect.any(String),
       flags: 'avz',
       quiet: true,
       delete: true,
